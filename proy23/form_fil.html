@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FILIACION NOMINAL</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+		
+		<h1>FILIACION PERSONAL</h1>
+		<hr>
+		<br>
+		<br>
+		<form method="post" action="conex_tablefil.php">
+
+          <div class="row form-group">
+          	<div class="col-sm-2">
+            	<label for="nommbre_apellido" class="control-label">Nombre y Apellido</label>
+            </div>
+            <div class="col-sm-10">
+								<input type="text" name="nommbre_apellido" id="nommbre_apellido" class="form-control" placeholder="Ingrese nombre">
+						</div>
+		  		</div>
+
+		  		<div class="row form-group">
+		 			 <div class="col-sm-2">	
+            	<label for="fecha_nac" class="control-label">Fecha de Nacimiento</label>
+           </div>
+           <div class="col-sm-4">
+							<input type="date" id="fecha_nac" name="fecha_nac"value="2018-07-22" min="1980-01-01" max="2080-12-31">
+						</div>
+						<div class="col-sm-2">	
+           			 <label for="numero_ci" class="control-label">Nº de Carnet</label>
+           </div>
+           <div class="col-sm-4">
+							<input type="text" name="numero_ci" id="numero_ci" class="form-control" placeholder="Ingrese su cedula de Identidad">
+						</div>
+		   		</div>
+
+		   		
+
+		   <div class="row form-group">
+		   	 <div class="col-sm-4">
+		  		<div class="input-group mb-3">
+  					<div class="input-group-prepend">
+    				<label class="input-group-text" for="tipo_sangre">Tipo de Sangre</label>
+  					</div>
+  			<select class="custom-select" name="tipo_sangre" id="tipo_sangre">
+    				<option selected>Elija una opcion</option>
+   				 	<option value="O+"> O+</option>
+    				<option value="O-"> O-</option>
+    				<option value="A-"> A-</option>
+    				<option value="A+"> A+</option>
+    				<option value="B-"> B-</option>
+    				<option value="B-"> B-</option>
+    				<option value="AB-"> AB-</option>
+    				<option value="AB+"> AB+</option>
+  			</select>
+					</div>
+				</div>
+				<div class="col-sm-2">	
+            	<label for="domicilio_actual" class="control-label">Domicilio Actual</label>
+         </div>
+          <div class="col-sm-6">
+							<input type="text" name="domicilio_actual" id="domicilio_actual" class="form-control" placeholder="Indique su Domicilio Actual">
+					</div>
+				</div>
+
+		   <div class="row form-group">
+		  			<div class="col-sm-2">	
+            	<label for="telefono" class="control-label">Telefono</label>
+           	</div>
+           	<div class="col-sm-4">
+							<input type="int" name="telefono" id="telefono" class="form-control" placeholder="Indique su Numero de Tel/Cel">
+						</div>
+		  </div>
+
+		  <div class="row form-group">
+		  	<div class="col-sm-2">	
+            <label for="nombre_p" class="control-label">Nombre del Padre</label>
+         </div>
+          <div class="col-sm-4">
+						<input type="text" name="nombre_p" id="nombre_p" class="form-control" placeholder="Ingrese el Nombre completo del Padre">
+					</div>
+					<div class="col-sm-2">	
+            <label for="nombre_m" class="control-label">Nombre de la Madre</label>
+         </div>
+          <div class="col-sm-4">
+						<input type="text" name="nombre_m" id="nombre_m" class="form-control" placeholder="Ingrese el Nombre completo de la Madre">
+					</div>
+		  </div>
+
+		  <div class="row form-group">
+		  		<div class="col-sm-4">	
+            	<label for="Emergencia" class="control-label">En caso De Emergencia Comunicarse Con</label>
+          </div>
+          <div class="col-sm-8">
+							<input type="text" name="Emergencia" id="Emergencia" class="form-control" placeholder="Comunicarse con">
+					</div>
+		  </div>
+
+		  <div class="row form-group">
+		  		<div class="col-sm-2">	
+            	<label for="direccion_f" class="control-label">Direccion </label>
+          </div>
+          <div class="col-sm-4">
+							<input type="text" name="direccion_f" id="direccion_f" class="form-control" placeholder="Ingrese su Direccion">
+					</div>
+					<div class="col-sm-2">	
+            	<label for="telefono_f" class="control-label">Telefono</label>
+          </div>
+          <div class="col-sm-4">
+							<input type="int" name="telefono_f" id="telefono_f" class="form-control" placeholder="Ingrese su Telefono">
+					</div>
+		  </div>
+
+      <div class="row form-group">
+		 			 <div class="col-sm-2">	
+           	 	<label for="profesion_oficio" class="control-label">Profesion u Oficio</label>
+           </div>
+           <div class="col-sm-6">
+							<input type="text" name="profesion_oficio" id="profesion_oficio" class="form-control" placeholder="Ingrese sus Nombres">
+					</div>
+		  </div>
+
+
+		   
+
+ <input type="submit" class="btn btn-success" value="Guardar">
+
+<a href="http://localhost:8080/proy2/lista_com.php"> <input type="button" class =" btn btn-danger" name="volver atrás" value="cancelar"> </a>
+
+ <div>
+ 	
+ 	 </div>
+
+
+</form>
+</div>
+</body>
+</html>

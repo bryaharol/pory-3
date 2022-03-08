@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro Nominal</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+		
+		<h1>Registro Relacion Nominal</h1>
+		<hr>
+		<form method="post" action="conex_tablerel.php">
+
+          <div class="row form-group">
+          	<div class="col-sm-2">
+            <label for="cod_estudiante" class="control-label">Codigo Estudiante</label>
+            </div>
+            <div class="col-sm-10">
+			<input type="text" name="cod_estudiante" id="cod_estudiante" class="form-control" placeholder="Ingrese su codigo">
+			</div>
+		  </div>
+
+		  <div class="row form-group">
+		  <div class="col-sm-2">	
+            <label for="nombre_com" class="control-label">Nombre Compañia</label>
+           </div>
+           <div class="col-sm-10">
+			<input type="text" name="nombre_com" id="nombre_com" class="form-control" placeholder="Ingrese el nombrede la compañia">
+			</div>
+		   </div>
+
+		   <div class="row form-group">
+		  <div class="col-sm-2">	
+            <label for="apellido_p" class="control-label">Apellido Paterno</label>
+           </div>
+           <div class="col-sm-10">
+			<input type="text" name="apellido_p" id="apellido_p" class="form-control" placeholder="Ingrese su Apellido Paterno">
+			</div>
+		   </div>
+
+		   <div class="row form-group">
+		  <div class="col-sm-2">	
+            <label for="apellido_m" class="control-label">Apellido Materno</label>
+           </div>
+           <div class="col-sm-10">
+			<input type="text" name="apellido_m" id="apellido_m" class="form-control" placeholder="Ingrese su Apellido Materno">
+			</div>
+		   </div>
+
+		   <div class="row form-group">
+		  <div class="col-sm-2">	
+            <label for="nombres" class="control-label">Nombres</label>
+           </div>
+           <div class="col-sm-10">
+			<input type="text" name="nombres" id="nombres" class="form-control" placeholder="Ingrese sus Nombres">
+
+
+			</div>
+		   </div>
+
+
+		   
+
+        <input type="submit" class="btn btn-success" value="guardar">
+
+        <a href="http://localhost:8080/proy2/lista_rel.php"> <input type="button" class =" btn btn-danger" name="volver atrás" value="cancelar"> </a>
+
+ </form>
+</div>
+</body>
